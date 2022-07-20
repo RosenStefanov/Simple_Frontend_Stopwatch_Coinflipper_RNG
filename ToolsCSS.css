@@ -1,0 +1,145 @@
+
+h1 {
+    font-size: 48px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 200;
+
+    text-align: center;
+    line-height: 60px;
+
+    padding: 0 64px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 48px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 200;
+
+    text-align: center;
+    line-height: 60px;
+
+    padding: 0 64px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 48px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 200;
+
+    text-align: center;
+    line-height: 60px;
+
+    padding: 0 64px;
+    margin: 0;
+}
+
+p1 {
+    font-size: 24px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+
+    text-align: center;
+    line-height: 40px;
+
+    padding: 0 40px;
+    margin: 0;
+}
+
+.stopwatch {
+    display: grid;
+    justify-items: center;
+    grid-row-gap: 23px;
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 16%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images/alfred-aloushy-Ow-joAY8NyY-unsplash.jpg');
+}
+
+.rngen {
+    display: grid;
+    justify-items: center;
+    grid-row-gap: 23px;
+    width: 100%;
+    padding-top: 15%;
+
+    padding-bottom: 16%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images/mark-konig-lLTwa21urpY-unsplash.jpg');
+}
+
+.coin {
+    display: grid;
+    justify-items: center;
+    grid-row-gap: 23px;
+    width: 100%;
+    padding-top: 15%;
+    padding-bottom: 16%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images/alessio-soggetti-gdE-5Oui1Y0-unsplash.jpg');
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 270px;
+    width: 270px;
+
+    border: 3px solid;
+    border-radius: 50%;
+}
+
+.time {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.rng {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    font-size: 64px;
+}
+
+.coinf {
+    font-family: 'Imbue', serif;
+    font-weight: 300;
+    font-size: 64px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+
+    width: 187px;
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+    padding: 0;
+    border: none;
+    margin: 0;
+    outline: none;
+}
+
+#playButton {
+    display: block;
+}
+
+#pauseButton {
+    display: none;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>ProektF099735</title>
+    <link href="ToolsCSS.css" rel="stylesheet"/>
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Imbue:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="stopwatch">
+    <h1>STOPWATCH</h1>
+    <div class="circle">
+        <span class="time" id="display">00:00:00</span>
+    </div>
+
+    <div class="controls">
+        <button class="buttonPlay">
+            <img id="playButton"
+                 src="data:image/png;base64,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"/>
+
+            <img id="pauseButton"
+                 src="data:image/png;base64,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"/>
+        </button>
+
+        <button class="buttonReset">
+            <img id="resetButton"
+                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABUElEQVRoQ+3aPUoEQRDF8d+C4AeroBdQT6CRCHoQEUwUPJToJgZeRAMzPYF6AQUVUTCQhmlZBzeqYGagNlp6tqrf+7+dqGrk/88cFmY86+r4E9/ty0etgxOcYgvzXSmdce8X7nGGi/qbaQNXOGgevOC1ZwZWsNpoKloPy/dqoJA/xwOOcNMz8VXOHi6xiaJ5Ug3cYgf7PRY/beIaRfNuMVBe2Hd8YK2n5NuynrGEcTEwxhuesDEQA49Yx3Ia6CixTKAj8L/XZgKZQJBA/oWCAMPlmUAYYbBBJhAEGC7PBMIIgw0ygSDAcHkmEEYYbJAJBAGGyzOBMMJgg0wgCDBcngmEEQYbZAJBgOHyTCCMMNggEwgCDJdnAmGEwQZ/EhjikK/MsRfrkK/AGPSYtRgY/KC7mBj0qkF9p46bZY/tni573DXLHpMquL2tUs8Hs27zA1ukmek23gbPAAAAAElFTkSuQmCC"/>
+        </button>
+    </div>
+</div>
+
+<div class="rngen">
+    <h2>RANDOM NUMBER GENERATOR</h2>
+
+    <p1>Generates a random number between 0 and 100</p1>
+
+    <div class="circle">
+        <span class="rng" id="display1"></span>
+    </div>
+
+    <div class="controls1">
+        <button class="buttonNewRng">
+            <img id="buttonNewRng"
+                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABEElEQVR4Xu2aOw4CMQxEHyWcgBo6aOH+B4AWOmo4AbRoBRewpViR/LaO18lk/BkrK5p/q+bnRwBkQHMEDIHmBDAJGgKGQHMEDIEkATbAIWk7yuwOvKM/zzBgOfwD2EadDV7/AnbAJ+InA8AJuEScFK49A9eIPwGIoPVfKwMMAXOASdAqkEieFSaWQfsAGyE7QVvhSLZVC0TQUgv8EFAMKYYUQ4ohxVCielSYKIYUQ4ohxZBiKJJtFUMRtBRDiiHVoHLYeYADESdCjsS6j8RmfST1BPYVj6SWUrgGjokucqTJLXr4ZTMZLTDyEOX/FoByyCdzKAMmu5Dy7ciAcsgncygDJruQ8u3IgHLIJ3PYngFfMixSQduguPoAAAAASUVORK5CYII=">
+        </button>
+    </div>
+</div>
+
+<div class="coin">
+    <h3>COIN FLIPPER</h3>
+
+    <div class="circle">
+        <span class="coinf" id="display2"></span>
+    </div>
+
+    <div class="controls2">
+        <button class="buttonCoin">
+            <img id="buttonCoin"
+                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABEElEQVR4Xu2aOw4CMQxEHyWcgBo6aOH+B4AWOmo4AbRoBRewpViR/LaO18lk/BkrK5p/q+bnRwBkQHMEDIHmBDAJGgKGQHMEDIEkATbAIWk7yuwOvKM/zzBgOfwD2EadDV7/AnbAJ+InA8AJuEScFK49A9eIPwGIoPVfKwMMAXOASdAqkEieFSaWQfsAGyE7QVvhSLZVC0TQUgv8EFAMKYYUQ4ohxVCielSYKIYUQ4ohxZBiKJJtFUMRtBRDiiHVoHLYeYADESdCjsS6j8RmfST1BPYVj6SWUrgGjokucqTJLXr4ZTMZLTDyEOX/FoByyCdzKAMmu5Dy7ciAcsgncygDJruQ8u3IgHLIJ3PYngFfMixSQduguPoAAAAASUVORK5CYII=">
+        </button>
+    </div>
+</div>
+
+<script src="ToolsJS.js"></script>
+</body>
+</html>
